@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvtheme[black]{classic} %[blue, green, orange, red, grey]{casual, classic}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage[scale=0.75]{geometry}
+\usepackage{graphicx}
+%\nopagenumbers{}
+\renewcommand{\familydefault}{\sfdefault}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\smash{\frame{\includegraphics[width=3cm]{picture.png}}}
+
+%\usepackage[ngerman]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{listings}
+
+\lstset{
+	literate={ö}{{\"o}}1
+	{ä}{{\"a}}1
+	{ü}{{\"u}}1
+    {ß}{{\ss}}1
+}
+
+
+\firstname{\Large{Leandro}}
+\familyname{Solagna Portillo}
+%\title{Curriculum Vitae}
+%\address{}
+%\mobile{}
+%\phone{}
+%\email{}
+
+%\homepage{example.com}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+	\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Personal Information}
+\cventry{Birth}{13. January 1990}{Foz do Iguaçu}{Brazil}{}{}
+\cventry{Citizenship}{Italian}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\subsection{Academic}
+\cventry{2012--2016}{B.Sc.}{Computer Science}{Faculdade Anglo Americano}{Brazil}{}
+\cventry{2010--2011}{B.Tech.}{Computer Network}{CESUFOZ}{Brazil}{}
+%\cvline{\textit{Bachelor thesis}}{\textit{Title}}
+
+\subsection{School Projects}
+\cventry{2015--2016}{IPv6 Security for Small Bussiness}{}{}{}{}
+\cventry{2010--2011}{IT infraestructure blueprints for a building}{}{}{}{}
+
+\subsection{School}
+\cventry{2005--2006}{William E. Hay Composite High School}{Exchange Program}{Stettler}{Canada}{}
+\cventry{2004--2007}{High School}{Colégio Anglo Americano}{Foz do Iguaçu}{Brazil}{}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\subsection{Languages}
+\cvlanguage{Portuguese}{Mother tongue}{}
+\cvlanguage{English}{Fluent}{}
+\cvlanguage{French}{Advance knowledge}{school for 8 years}
+\cvlanguage{Spanish}{Intermediate knowledge}{}
+\cvlanguage{German}{Basic knowledge}{school for 1 year}
+\cvlanguage{Brazilian Sign Language}{Basic knowledge}{school for 6 months}
+
+\cvline{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+%\subsection{Vocational}
+\cventry{\scriptsize{08/2018 -- present}}{DevOps}{Business Keeper AG}{Berlin}{Germany}{}
+\cventry{\scriptsize{05/2017 -- 07/2018}}{System Administrator}{Fundação Parque Tecnológico Itaipu - Brasil}{Foz do Iguaçu}{Brazil}{}
+\cventry{\scriptsize{07/2015 -- 04/2017}}{Computer Technician}{Fundação Parque Tecnológico Itaipu - Brasil}{Foz do Iguaçu}{Brazil}{}
+\cventry{\scriptsize{09/2014 -- 06/2015}}{Intern}{Fundação Parque Tecnológico Itaipu - Brasil}{Foz do Iguaçu}{Brazil}{}
+
+\subsection{Work Related Projects}
+\cventry{2017--2018}{Backup Offsite}{}{}{}{}
+\cventry{2016--2017}{Puppet for Windows Desktops}{}{}{}{}
+
+%\cventry{\footnotesize{09/2014 -- 06/2015}}{Intern}{Fundação Parque Tecnológico Itaipu - Brasil}{Foz do Iguaçu}{Brazil}{}
+%\subsection{Miscellaneous}
+%\cventry{07/2011}{Competitor}{4th World AI Driving Championships}{London, United Kingdom}{}{}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\section{Computer Skills}
+
+\subsection{Knowledge}
+\cvitem{Basic}{CISCO switching, Shell script, C programming language, Git, Docker, Zabbix, Active Directory, Samba 4, Bind9, Isc DHCP}
+\cvitem{Intermediate}{Apache HTTP Server, Apache Tomcat, Puppet Automation, IPtables rules, Windows Server 2012/2016, Linux Red Hat, Bacula, Postgresql-9/10, MariaDB 5/10, Oracle Database 11g Standalone, IPv4, IPv6}
+\cvitem{Advanced}{Linux Ubuntu Server, CentOS, Windows 7/8/10}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\pagebreak
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Concerts}{Snowboarding}
+\cvlistdoubleitem{Travelling}{Hockey}
+\cvlistdoubleitem{Football}{}
+%----------------------------------------------------------------------------------------
+
+\cvline{}{}{}
+\cvline{}{}{}
+
+Berlin, \today
+\end{document}
